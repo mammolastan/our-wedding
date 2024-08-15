@@ -3,49 +3,35 @@
 import React, { useState } from 'react'
 import { createReservation } from '@/app/libs/actions';
 import { create } from 'domain';
-import { set } from 'react-hook-form';
-
-const initialFormData = {
-    yourname: '',
-    response: '',
-    numberguests: 0,
-    mymeal: '',
-    guest1: '',
-    guest2: '',
-    guest3: '',
-    guest1meal: '',
-    guest2meal: '',
-    guest3meal: '',
-    notes: ''
-}
 
 export default function Form() {
 
     console.log("in Form");
-    const [myFormData, setMyFormData] = useState(initialFormData)
+    const [myFormData, setMyFormData] = useState({
+        yourname: '',
+        response: '',
+        numberguests: 0,
+        guest1: '',
+        guest1meal: '',
+        notes: ''
+    })
 
     const attending = myFormData.response === 'Yes, I plan to attend the reception' ? true : false
     const numberguests = myFormData.numberguests
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => { setMyFormData({ ...myFormData, [e.target.id]: e.target.value }) }
-    const handleSubmitClick = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-        setMyFormData(initialFormData);
-        createReservation(myFormData)
-    }
 
-    console.log("logging myFormData")
+    console.log("myFormData")
     console.log(myFormData)
 
     return (
-        <form onSubmit={handleSubmitClick} className="w-full max-w-lg dark:text-gray-300">
-
+        <form action={createReservation} className="w-full max-w-lg dark:text-gray-300">
             <div className="flex flex-wrap -mx-3 mb-6">
                 <div className="w-full px-3 mb-6 md:mb-0">
                     <label className="block uppercase tracking-wide  text-xs font-bold mb-2" htmlFor="yourname">
                         Your name
                     </label>
-                    <input value={myFormData.yourname} onChange={handleChange} className="appearance-none block w-full bg-gray-200  border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" name="yourname" id="yourname" type="text" placeholder="Ace Spade" />
+                    <input onChange={handleChange} className="appearance-none block w-full bg-gray-200  border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="yourname" type="text" placeholder="Ace Spade" />
 
                     {/* <p className="text-red-500 text-xs italic">Please fill out this field.</p> */}
 
@@ -57,7 +43,7 @@ export default function Form() {
                     <label className="block uppercase tracking-wide  text-xs font-bold mb-2" htmlFor="response">
                         Will you be attending?
                     </label>
-                    <select value={myFormData.response} onChange={handleChange} className="appearance-none block w-full bg-gray-200  border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="response" name="response">
+                    <select onChange={handleChange} className="appearance-none block w-full bg-gray-200  border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="response">
                         <option>Choose</option>
                         <option>Yes, I plan to attend the reception</option>
                         <option>No, I am unable to attend</option>
@@ -66,24 +52,6 @@ export default function Form() {
                 </div>
                 {attending && (
                     <>
-                        <div className="w-full my-3">
-                            <label className="block uppercase tracking-wide text-xs font-bold mb-2" htmlFor='mymeal'>
-                                Do you have any dietary restrictions?
-                            </label>
-                            <select
-                                onChange={handleChange}
-                                className="appearance-none block w-full bg-gray-200 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                                id='mymeal'
-                                name='mymeal'
-                            >
-                                <option>None</option>
-                                <option>Gluten free</option>
-                                <option>Vegetarian</option>
-                                <option>Vegan</option>
-                                <option>Other</option>
-                            </select>
-                        </div>
-
                         <div className="w-full md:w-1/3 my-1 px-3">
                             <label className="block uppercase tracking-wide text-xs font-bold mb-2" htmlFor="numberguests">
                                 How many guests?
@@ -92,7 +60,6 @@ export default function Form() {
                                 onChange={handleChange}
                                 className="appearance-none block w-full bg-gray-200 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 text-center"
                                 id="numberguests"
-                                name="numberguests"
                                 type="number"
                                 placeholder="0"
                                 min="0"
@@ -109,7 +76,6 @@ export default function Form() {
                                         onChange={handleChange}
                                         className="appearance-none block w-full bg-gray-200 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                                         id={`guest${i + 1}`}
-                                        name={`guest${i + 1}`}
                                         type="text"
                                         placeholder="Joker"
                                     />
@@ -121,7 +87,6 @@ export default function Form() {
                                             onChange={handleChange}
                                             className="appearance-none block w-full bg-gray-200 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                                             id={`guest${i + 1}meal`}
-                                            name={`guest${i + 1}meal`}
                                         >
                                             <option>None</option>
                                             <option>Gluten free</option>
@@ -140,13 +105,13 @@ export default function Form() {
                     <label className="block uppercase tracking-wide  text-xs font-bold mb-2" htmlFor="notes">
                         Notes
                     </label>
-                    <textarea value={myFormData.notes} onChange={handleChange} id="notes" name="notes" rows={3} className="appearance-none block w-full bg-gray-200  border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 place" placeholder='Show me what you got'></textarea>
+                    <textarea onChange={handleChange} id="notes" name="notes" rows={3} className="appearance-none block w-full bg-gray-200  border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 place" placeholder='Show me what you got'></textarea>
 
 
                 </div>
             </div>
-            <button className="p-3 rounded hover:bg-zinc-400 bg-zinc-200" type="submit">Submit RSVP</button>
+            <button type="submit">Submit RSVP</button>
 
-        </form >
+        </form>
     )
 }

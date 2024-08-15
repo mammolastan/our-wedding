@@ -5,3 +5,7 @@ node_modules/*
 LICENSE
 next-env.d.ts
 yarn.lock  
+.env
+.env.local
+
+.notes
