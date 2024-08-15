@@ -21,7 +21,7 @@ const initialFormData = {
 
 export default function Form() {
 
-    console.log("in Form");
+
     const [myFormData, setMyFormData] = useState(initialFormData)
 
     const attending = myFormData.response === 'Yes, I plan to attend the reception' ? true : false
@@ -34,8 +34,6 @@ export default function Form() {
         createReservation(myFormData)
     }
 
-    console.log("logging myFormData")
-    console.log(myFormData)
 
     return (
         <form onSubmit={handleSubmitClick} className="w-full max-w-lg dark:text-gray-300">
