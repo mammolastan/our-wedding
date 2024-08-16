@@ -9,3 +9,4 @@ yarn.lock
 .env.local
 
 .notes
+.DS_store
