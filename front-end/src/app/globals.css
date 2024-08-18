@@ -11,4 +11,10 @@
 
 .longstory p {
   margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.caption {
+  text-align: center;
+  font-style: italic;
 }

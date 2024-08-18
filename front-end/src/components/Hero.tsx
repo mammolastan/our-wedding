@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Container } from "@/components/Container";
-import heroImg from "../../public/img/hero.png";
+import heroImg from "../../public/img/Pose-sm.jpg";
 
 export const Hero = () => {
   return (
@@ -35,6 +35,7 @@ export const Hero = () => {
               loading="eager"
               placeholder="blur"
             />
+            <p className="caption">Us in October, 20202</p>
           </div>
         </div>
       </Container>
