@@ -41,13 +41,12 @@ export default function Home() {
       </SectionTitle>
       <Lodging />
       {/* <Video videoId="fZ0D0cnR88E" /> */}
-
+      <a id='Aboutthevenue'></a>
       <SectionTitle
-        preTitle="Testimonials"
-        title="Here's what our customers said"
+        preTitle="About the venue"
+        title="The Trolley Barn"
       >
-        Testimonials is a great way to increase the brand trust and awareness.
-        Use this section to highlight your popular customers.
+        The Trolley Barn is a venue space in the Edgewood neighborhood of Atlanta. Val and I have attended a wedding ceremony at the venue before, and can confirm that this will be a perfect venue for our event. <br /><br /><a className="underline hover:cursor-pointer" href="https://thetrolleybarn.com/about/">About The Trolley Barn</a>
       </SectionTitle>
 
       <Testimonials />

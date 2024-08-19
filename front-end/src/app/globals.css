@@ -9,6 +9,10 @@
   }
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 .longstory p {
   margin-bottom: 1.5rem;
   text-align: left;

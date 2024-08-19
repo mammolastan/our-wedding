@@ -14,7 +14,7 @@ export const Navbar = () => {
   ];
 
   return (
-    <div className="w-full">
+    <div className="w-full fixed bg-yellow-50 dark:bg-cyan-950">
       <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between xl:px-0 sticky">
         {/* Logo  */}
         <Disclosure>
@@ -25,7 +25,7 @@ export const Navbar = () => {
                   <span className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
                     <span>
                       <Image
-                        src="/img/logo.svg"
+                        src="/img/joey-jane.png"
                         alt="N"
                         width="32"
                         height="32"
