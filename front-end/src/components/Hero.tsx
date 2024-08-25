@@ -5,9 +5,9 @@ import heroImg from "../../public/img/Pose-sm.jpg";
 export const Hero = () => {
   return (
     <>
-      <Container className="flex flex-wrap mt-20">
+      <Container className="flex flex-wrap">
         <div className="flex items-center w-full lg:w-1/2">
-          <div className="max-w-2xl mb-8">
+          <div className="max-w-2xl mb-8 mx-auto text-center">
             <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
               February 8, 2025
             </h1>
@@ -24,8 +24,8 @@ export const Hero = () => {
 
           </div>
         </div>
-        <div className="flex items-center justify-center w-full lg:w-1/2">
-          <div className="">
+        <div className="flex items-center justify-center w-full lg:w-1/2 ">
+          <div className="mx-auto">
             <Image
               src={heroImg}
               width="616"
@@ -35,7 +35,7 @@ export const Hero = () => {
               loading="eager"
               placeholder="blur"
             />
-            <p className="caption">Us in October, 2020</p>
+            <p className="caption">Us in October, 2020 (just after proposal)</p>
           </div>
         </div>
       </Container>

@@ -15,6 +15,7 @@ export default function Home() {
   return (
     <Container>
       <Hero />
+      <a id="RSVP"></a>
       <SectionTitle
         preTitle="Can you make it?"
         title="RSVP"
@@ -55,7 +56,7 @@ export default function Home() {
       </SectionTitle>
 
       <Faq />
-      <Cta />
+
     </Container>
   );
 }

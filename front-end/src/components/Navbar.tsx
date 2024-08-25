@@ -14,13 +14,13 @@ export const Navbar = () => {
   ];
 
   return (
-    <div className="w-full fixed bg-yellow-50 dark:bg-cyan-950">
-      <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between xl:px-0 sticky">
+    <>
+      <nav className="w-full fixed bg-blue-300 dark:bg-cyan-950 flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between xl:px-0 z-20 top-0 start-0">
         {/* Logo  */}
         <Disclosure>
           {({ open }) => (
             <>
-              <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
+              <div className="flex flex-wrap items-center justify-between w-full lg:w-auto ml-1">
                 <Link href="/">
                   <span className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
                     <span>
@@ -62,7 +62,7 @@ export const Navbar = () => {
                 <Disclosure.Panel className="flex flex-wrap w-full my-5 lg:hidden">
                   <>
                     {navigation.map((item, index) => (
-                      <Link key={index} href="/" className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none">
+                      <Link key={index} href={`#${item.replace(/\s/g, '')}`} className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none">
                         {item}
                       </Link>
                     ))}
@@ -95,7 +95,10 @@ export const Navbar = () => {
           <ThemeChanger />
         </div>
       </nav>
-    </div>
+      <div className="navbar-spacer"></div>
+    </>
+
+
   );
 }
 

@@ -36,7 +36,7 @@ export const Faq = () => {
 
 const faqdata = [
   {
-    question: "Why are you have a reception now?",
+    question: "Why are you having a reception now?",
     answer: "We were wed in 2021 with (almost) no witnesses. February 8, 2025 will be our fourth wedding anniversary. We figured it was time to finally have a gathering in honor of our marriage, have an excuse to bring family and friends together, and we're excited to invite you to a reception.",
   },
   {
@@ -49,12 +49,7 @@ const faqdata = [
       "Please, no gifts! We already got married and have everything we need. Your presence is the best present.",
   },
   {
-    question: "Do you offer technical support? ",
-    answer:
-      "No, we don't offer technical support for free downloads. Please purchase a support plan to get 6 months of support.",
-  },
-  {
     question: "What's the situation for kids?",
-    answer: "Our reception is absolutely kid-friendly."
+    answer: "Our reception is absolutely kid-friendly. We will have a dedicated area for kids with a baby sitter during the event?"
   }
 ];

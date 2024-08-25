@@ -13,6 +13,10 @@ a:hover {
   cursor: pointer;
 }
 
+.navbar-spacer {
+  height: 100px;
+}
+
 .longstory p {
   margin-bottom: 1.5rem;
   text-align: left;

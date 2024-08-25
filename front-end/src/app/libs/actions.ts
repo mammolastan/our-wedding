@@ -51,7 +51,6 @@ export async function createReservation(formData: formDataType) {
 
   try {
     const db = await pool.getConnection();
-    // const query = `INSERT INTO \`rsvps\`(\`yourname\`, \`response\`,\`notes\`) VALUES ("${yourname}","${response}","${notes}")`;
     const query = theQuery;
     const result = await db.execute(query);
 
