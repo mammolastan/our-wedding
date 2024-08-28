@@ -21,7 +21,9 @@ export default function Lodging() {
                 <Benefits imgPos="right" data={lodgingOne} />
                 <h3 className='text-2xl  font-semibold leading-7 text-left p-8 pl-0'> Transportation </h3>
                 <p>
-                    We will have a rideshare service available to take guests to and from the reception venue. The service will be available from 4:00 PM to 11:00 PM.
+                    We will have a rideshare code (Lyft) for the day of the wedding - we will share that as it becomes available.
+                    <br />
+                    There is also plenty of parking available near the reception venue.
                 </p>
             </div>
 

@@ -35,7 +35,7 @@ export const Hero = () => {
               loading="eager"
               placeholder="blur"
             />
-            <p className="caption">Us in October, 2020 (just after proposal)</p>
+            <p className="caption">Us in October, 2020 (immediately post-proposal)</p>
           </div>
         </div>
       </Container>

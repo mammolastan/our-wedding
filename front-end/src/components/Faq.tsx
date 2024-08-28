@@ -51,5 +51,9 @@ const faqdata = [
   {
     question: "What's the situation for kids?",
     answer: "Our reception is absolutely kid-friendly. We will have a dedicated area for kids with a baby sitter during the event?"
+  },
+  {
+    question: "Can we really call it Frequently Asked Questions if nobody has asked us yet?",
+    answer: "We could have called it 'Potentially Recurrent Inquiries That We Suspect Might Become Popular in the Future Based on Common Trends and Observations That We Have Gathered Over Time' but that's a bit long."
   }
 ];
