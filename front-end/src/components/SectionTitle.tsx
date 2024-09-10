@@ -19,7 +19,7 @@ export const SectionTitle = (props: Readonly<SectionTitleProps>) => {
         className={`flex w-full flex-col mt-4 ${props.align === "left" ? "" : "items-center justify-center text-center"
           }`}>
         {props.preTitle && (
-          <div className="text-sm font-bold tracking-wider text-indigo-600 dark:text-indigo-300 uppercase">
+          <div className="text-sm font-bold tracking-wider text-slate-700 dark:text-indigo-300 uppercase">
             {props.preTitle}
           </div>
         )}

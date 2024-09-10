@@ -18,7 +18,7 @@ export const Hero = () => {
               963 Edgewood Avenue, NE Atlanta, GA 30307
             </h2>
             <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
-              Please RSVP by January 1, 2025.
+              Please RSVP by December 1, 2025.
             </p>
 
 

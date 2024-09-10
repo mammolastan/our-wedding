@@ -10,6 +10,7 @@ import { Cta } from "@/components/Cta";
 import { benefitOne, benefitTwo } from "@/components/data";
 import Ourstory from "@/components/Ourstory";
 import Lodging from "@/components/Lodging";
+import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -29,8 +30,8 @@ export default function Home() {
       {/* <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} /> */}
       <a id="Ourstory"></a>
-      <SectionTitle preTitle="A brief summary"
-        title="Our Story">
+      <SectionTitle preTitle="Our story"
+        title="A Brief summary">
       </SectionTitle>
 
       <Ourstory />

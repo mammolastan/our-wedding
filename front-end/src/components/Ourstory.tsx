@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Container } from "./Container";
-
+import heroImg from "../../public/img/Pose-sm.jpg";
 import usOnOurWeddingDay from "../../public/img/Just-married.jpg";
 
 export default function Ourstory() {
@@ -21,11 +21,27 @@ export default function Ourstory() {
                 <p>
                     February 8, 2025 will be our fourth wedding anniversary. We figured it was time to finally have a gathering in honor of our marriage, have an excuse to bring family and friends together, and we&rsquo;re excited to invite you to a reception.
                 </p>
-                <hr className="border-8 rounded-xl border-dashed border-red-500 border-s-8 my-10" />
+                <hr className="border-8 rounded-xl border-neutral-200 border-s-8 my-10" />
                 <p>
                     We first met as students at Georgia State. We were in the same film class - &quot;Computational Media&quot; - and peered at each other for weeks through glowing rows of Mac monitors in a dark computer lab during lectures.
                 </p>
-                <p> We immediately fell in love. It wasn&apos;t long before we started chatting (facebook), which pretty quickly led to our first date (Urban Grind Coffee Shop), which led to our first movie together (Nerdcore Rising), which led to moving in together (East Atlanta), which led to Matt&apos;s first and second dog (Santa and Willow) <s>which led to</s>...<i>(first events truncated for length)</i>... ,leading ultimately to Matt&apos;s proposal on top of Black Rock Mountain in 2021. </p>
+                <p> We immediately fell in love. It wasn&apos;t long before we started chatting (facebook), which pretty quickly led to our first date (Urban Grind Coffee Shop), which led to our first movie together (Nerdcore Rising), which led to moving in together (East Atlanta), which led to Matt&apos;s first and second dog (Santa and Willow) <s>which led to</s>...<i>(first events truncated for length)</i>... , leading ultimately to Matt proposing to Valerie on top of Black Rock Mountain in 2021. </p>
+                <div className="flex items-center justify-center w-full">
+                    <div className="mx-auto">
+                        <Image
+                            src={heroImg}
+                            width="400"
+                            height="400"
+                            className={"object-cover mx-auto"}
+                            alt="Hero Illustration"
+                            loading="eager"
+                            placeholder="blur"
+                        />
+                        <p className="caption">Us in October, 2020 (immediately post-proposal)</p>
+                    </div>
+                </div>
+                <p> We&apos;ve now had 14 years of joy together, and we&apos;re excited to celebrate our love with you. </p>
+
 
             </div>
 
