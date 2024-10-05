@@ -1,6 +1,9 @@
 import { Benefits } from './Benefits'
 import { Container } from './Container'
-import { lodgingOne } from './data'
+import { lodgingOne, lodgingTwo } from './data'
+import Image from 'next/image'
+import imgBandB from '../../public/img/sugar_magnolia.jpg'
+
 
 export default function Lodging() {
     return (
@@ -8,15 +11,44 @@ export default function Lodging() {
             className='flex w-full flex-col mt-4 items-center justify-center text-left longstory'>
             <div className="max-w-2xl text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300">
                 <h3 className='text-2xl  font-semibold leading-7 text-left p-8 pl-0'> Lodging </h3>
-                <p>
-                    There are a number of options for lodging in the specific area. Here is a few of our recommendations:
-                </p>
 
-                <p>
-                    The hotel is a short drive from the reception venue and is a great place to stay if you are coming from out of town.
-                </p>
+
+
+                <strong>Bed &amp; Breakfast:</strong>
+                <Image
+                    src={imgBandB}
+                    width={521}
+                    height={521}
+                    alt="Benefits"
+                    className="float-right p-2 imageSpecial"
+                    placeholder="blur"
+                    blurDataURL="../public/img/sugar_magnolia.jpg"
+                />
+                <ol className='listicle'>
+                    <li><a href="https://sugarmagnoliabb.com/">Sugar Magnolia B&B</a></li>
+                    <li><a href="https://urbanoasisbandb.com/">Urban Oasis B&B</a></li>
+                    <li><a href="https://www.thepeach.house/">The Peach House</a></li>
+                </ol>
+
+                <br className='clear-both'></br>
+
+                <strong>Hotels:</strong>
+                <ol className='listicle' id='hotel'>
+                    <li><a href="https://forthatlanta.com/hotel">Fort Hotel Atlanta</a></li>
+                    <li><a href="https://www.hotelclermont.com/">Hotel Clermont</a></li>
+                    <li><a href="https://www.wyliehotel.com/">Wylie Hotel</a></li>
+                    <li><a href="https://www.thedarwinhotel.com/rooms.htm">The Darwin Hotel</a></li>
+                    <li><a href="https://www.sonder.com/">Sonder</a></li>
+                    <li><a href="https://www.sonder.com/destinations/atlanta/midtown-south/c32642?sleeps=1&utm_medium=cpc&utm_source=google&utm_term=&utm_campaign=18355897655">Midtown South</a></li>
+                    <li><a href="https://www.sonder.com/destinations/atlanta/baltimore-place/c31420?sleeps=1&utm_medium=cpc&utm_source=google&utm_term=baltimore+place+atlanta&utm_campaign=15996984601">Baltimore Place</a></li>
+                    <li><a href="https://thegeorgianterrace.com/">The Georgian Terrace</a></li>
+                </ol>
+
+
+
 
                 <Benefits imgPos="right" data={lodgingOne} />
+                <Benefits imgPos="left" data={lodgingTwo} />
                 <h3 className='text-2xl font-semibold leading-7 text-left p-8 pl-0'> Transportation </h3>
                 <p>
                     We will have a rideshare code (Lyft) for the day of the wedding - we will share that as it becomes available.

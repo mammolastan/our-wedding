@@ -59,7 +59,7 @@ export default function Form() {
                         <label className="block uppercase tracking-wide  text-xs font-bold mb-2" htmlFor="yourname">
                             Your name
                         </label>
-                        <input value={myFormData.yourname} onChange={handleChange} className="appearance-none block w-full bg-gray-200 dark:bg-transparent border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" name="yourname" id="yourname" type="text" placeholder="Ace Spade" />
+                        <input value={myFormData.yourname} onChange={handleChange} className="appearance-none block w-full bg-gray-200 dark:bg-transparent border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" name="yourname" id="yourname" type="text" placeholder="Name" />
 
                         {/* <p className="text-red-500 text-xs italic">Please fill out this field.</p> */}
 
@@ -72,7 +72,7 @@ export default function Form() {
                             Will you be attending?
                         </label>
                         <select value={myFormData.response} onChange={handleChange} className="appearance-none block w-full bg-gray-200 dark:bg-transparent border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 dark:text-gray-300" id="response" name="response">
-                            <option className="dark:text-gray-300">Choose</option>
+                            <option className="dark:text-gray-300">Select</option>
                             <option>Yes, I plan to attend the reception</option>
                             <option>No, I am unable to attend</option>
                         </select>
@@ -125,7 +125,7 @@ export default function Form() {
                                             id={`guest${i + 1}`}
                                             name={`guest${i + 1}`}
                                             type="text"
-                                            placeholder="Joker"
+                                            placeholder="Guest"
                                         />
                                         <div className="md:1/4 my-3">
                                             <label className="block uppercase tracking-wide text-xs font-bold mb-2" htmlFor={`guest${i + 1}meal`}>
@@ -154,7 +154,7 @@ export default function Form() {
                         <label className="block uppercase tracking-wide  text-xs font-bold mb-2" htmlFor="notes">
                             Notes
                         </label>
-                        <textarea value={myFormData.notes} onChange={handleChange} id="notes" name="notes" rows={3} className="appearance-none block w-full bg-gray-200 dark:bg-transparent border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 place" placeholder='Show me what you got'></textarea>
+                        <textarea value={myFormData.notes} onChange={handleChange} id="notes" name="notes" rows={3} className="appearance-none block w-full bg-gray-200 dark:bg-transparent border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 place" placeholder='Special Accomodations/Comments'></textarea>
 
 
                     </div>

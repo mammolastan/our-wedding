@@ -3,14 +3,14 @@ import { Hero } from "@/components/Hero";
 import { SectionTitle } from "@/components/SectionTitle";
 import { Benefits } from "@/components/Benefits";
 import { Video } from "@/components/Video";
-import { Testimonials } from "@/components/Testimonials";
+// import { Testimonials } from "@/components/Testimonials";
 import { Faq } from "@/components/Faq";
 import { Cta } from "@/components/Cta";
-
-import { benefitOne, benefitTwo } from "@/components/data";
 import Ourstory from "@/components/Ourstory";
 import Lodging from "@/components/Lodging";
 import { Footer } from "@/components/Footer";
+import Image from "next/image";
+import trolleyBarn from "../../public/img/trolleybarn.jpg";
 
 export default function Home() {
   return (
@@ -44,14 +44,24 @@ export default function Home() {
       <Lodging />
       {/* <Video videoId="fZ0D0cnR88E" /> */}
       <a id='Aboutthevenue'></a>
+
       <SectionTitle
         preTitle="About the venue"
         title="The Trolley Barn"
       >
-        The Trolley Barn is a venue space in the Edgewood neighborhood of Atlanta. Val and I have attended a wedding ceremony at the venue before, and can confirm that this will be a perfect venue for our event. <br /><br /><a className="underline hover:cursor-pointer" href="https://thetrolleybarn.com/about/">About The Trolley Barn</a>
+        <Image
+          src={trolleyBarn}
+          width="200"
+          height="600"
+          className="float-left p-2"
+          alt="The Trolley Barn"
+          loading="eager"
+          placeholder="blur"
+        />
+        The Trolley Barn is a historic building that originally served as the headquarters for the Atlanta and Edgewood Street Railway Company. Today, The Trolley Barn operates as an events facility with a focus on supporting non-profits and giving back to the community. Val and I have attended a wedding ceremony at the venue before, and can confirm that this will be a perfect venue for our event. <br /><br /><a className="underline hover:cursor-pointer" href="https://thetrolleybarn.com/about/">About The Trolley Barn</a>
       </SectionTitle>
 
-      <Testimonials />
+      {/* <Testimonials /> */}
       <a id="FAQ"></a>
       <SectionTitle preTitle="FAQ" title="Frequently Asked Questions">
       </SectionTitle>

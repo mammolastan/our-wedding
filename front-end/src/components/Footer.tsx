@@ -8,7 +8,7 @@ export function Footer() {
   return (
 
 
-    <div className="text-center text-sm mx-auto text-white p-4 border-t bg-red-950 border-gray-100 dark:border-trueGray-700">
+    <div className="text-center text-sm mx-auto text-white p-4 border-t bg-stone-300 border-gray-100 dark:border-trueGray-700">
       <p>Website created by Matt and Val. Built using NextJS.</p>
     </div>
 

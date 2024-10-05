@@ -2,6 +2,8 @@ import Image from "next/image";
 import { Container } from "./Container";
 import heroImg from "../../public/img/Pose-sm.jpg";
 import usOnOurWeddingDay from "../../public/img/Just-married.jpg";
+import ImageModal from "./ImageModal";
+
 
 export default function Ourstory() {
     return (
@@ -28,19 +30,12 @@ export default function Ourstory() {
                 <p> We immediately fell in love. It wasn&apos;t long before we started chatting (facebook), which pretty quickly led to our first date (Urban Grind Coffee Shop), which led to our first movie together (Nerdcore Rising), which led to moving in together (East Atlanta), which led to Matt&apos;s first and second dog (Santa and Willow) <s>which led to</s>...<i>(first events truncated for length)</i>... , leading ultimately to Matt proposing to Valerie on top of Black Rock Mountain in 2021. </p>
                 <div className="flex items-center justify-center w-full">
                     <div className="mx-auto">
-                        <Image
-                            src={heroImg}
-                            width="400"
-                            height="400"
-                            className={"object-cover mx-auto"}
-                            alt="Hero Illustration"
-                            loading="eager"
-                            placeholder="blur"
-                        />
+
+                        <ImageModal />
                         <p className="caption">Us in October, 2020 (immediately post-proposal)</p>
                     </div>
                 </div>
-                <p> We&apos;ve now had 14 years of joy together, and we&apos;re excited to celebrate our love with you. </p>
+                <p> We&apos;ve now had 11 years of joy together, and we&apos;re excited to celebrate our love with you. </p>
 
 
             </div>

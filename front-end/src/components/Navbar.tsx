@@ -7,9 +7,9 @@ import { Disclosure } from "@headlessui/react";
 export const Navbar = () => {
   const navigation = [
     "RSVP",
-    "Our story",
-    "Lodging/transportation",
-    "About the venue",
+    "Our Story",
+    "Lodging/Transportation",
+    "About the Venue",
     "FAQ",
   ];
 
@@ -24,13 +24,13 @@ export const Navbar = () => {
                 <Link href="/">
                   <span className="flex items-center space-x-2 text-2xl font-medium text-slate-700 dark:text-gray-100">
                     <span>
-                      <Image
+                      {/* <Image
                         src="/img/joey-jane.png"
                         alt="N"
                         width="32"
                         height="32"
                         className="w-8"
-                      />
+                      /> */}
                     </span>
                     <span>Matt and Val&rsquo;s reception</span>
                   </span>

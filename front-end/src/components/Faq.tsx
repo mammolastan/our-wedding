@@ -53,6 +53,10 @@ const faqdata = [
     answer: "Our reception is absolutely kid-friendly. We will have a dedicated area for kids with a baby sitter during the event?"
   },
   {
+    question: "What's the dress code?",
+    answer: "Cocktail attire. We're going for a semi-formal vibe, but feel free to wear whatever makes you feel comfortable."
+  },
+  {
     question: "Can we really call it Frequently Asked Questions if nobody has asked us yet?",
     answer: "We could have called it 'Potentially Recurrent Inquiries That We Suspect Might Become Popular in the Future Based on Common Trends and Observations That We Have Gathered Over Time' but that's a bit long."
   }
