@@ -22,20 +22,20 @@ export default function Home() {
         title="RSVP"
         form={true}
       >
-        February 8, 2025
+
         <br>
         </br>Atlanta, Georgia
       </SectionTitle>
 
       {/* <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} /> */}
-      <a id="Ourstory"></a>
+      <a id="OurStory"></a>
       <SectionTitle preTitle="Our story"
-        title="A Brief summary">
+        title="A Brief Summary">
       </SectionTitle>
 
       <Ourstory />
-      <a id="Lodging/transportation"></a>
+      <a id="Lodging/Transportation"></a>
       <SectionTitle
         preTitle="Places to stay and getting around"
         title="Lodging and Transportation"
@@ -43,10 +43,10 @@ export default function Home() {
       </SectionTitle>
       <Lodging />
       {/* <Video videoId="fZ0D0cnR88E" /> */}
-      <a id='Aboutthevenue'></a>
+      <a id='AbouttheVenue'></a>
 
       <SectionTitle
-        preTitle="About the venue"
+        preTitle="About the Venue"
         title="The Trolley Barn"
       >
         <Image

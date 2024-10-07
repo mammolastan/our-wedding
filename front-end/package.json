@@ -19,6 +19,7 @@
     "react-confetti": "^6.1.0",
     "react-dom": "^18",
     "react-hook-form": "^7.51.4",
+    "react-scripts": "^5.0.1",
     "react-use": "^17.5.1"
   },
   "devDependencies": {

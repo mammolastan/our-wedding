@@ -3,7 +3,8 @@ import { Container } from './Container'
 import { lodgingOne, lodgingTwo } from './data'
 import Image from 'next/image'
 import imgBandB from '../../public/img/sugar_magnolia.jpg'
-
+import hotel1 from '../../public/img/forth.jpg'
+import hotel2 from '../../public/img/thedarwin.jpeg'
 
 export default function Lodging() {
     return (
@@ -22,7 +23,6 @@ export default function Lodging() {
                     alt="Benefits"
                     className="float-right p-2 imageSpecial"
                     placeholder="blur"
-                    blurDataURL="../public/img/sugar_magnolia.jpg"
                 />
                 <ol className='listicle'>
                     <li><a href="https://sugarmagnoliabb.com/">Sugar Magnolia B&B</a></li>
@@ -31,6 +31,22 @@ export default function Lodging() {
                 </ol>
 
                 <br className='clear-both'></br>
+                <Image
+                    src={hotel2}
+                    width={521}
+                    height={521}
+                    alt="Benefits"
+                    className="float-right p-2 imageSpecial"
+                    placeholder="blur"
+                />
+                <Image
+                    src={hotel1}
+                    width={521}
+                    height={521}
+                    alt="Benefits"
+                    className="float-right p-2 imageSpecial clear-right"
+                    placeholder="blur"
+                />
 
                 <strong>Hotels:</strong>
                 <ol className='listicle' id='hotel'>
@@ -44,11 +60,7 @@ export default function Lodging() {
                     <li><a href="https://thegeorgianterrace.com/">The Georgian Terrace</a></li>
                 </ol>
 
-
-
-
-                <Benefits imgPos="right" data={lodgingOne} />
-                <Benefits imgPos="left" data={lodgingTwo} />
+                <br className='clear-both'></br>
                 <h3 className='text-2xl font-semibold leading-7 text-left p-8 pl-0'> Transportation </h3>
                 <p>
                     We will have a rideshare code (Lyft) for the day of the wedding - we will share that as it becomes available.
