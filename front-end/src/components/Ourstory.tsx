@@ -23,7 +23,7 @@ export default function Ourstory() {
                 <p>
                     February 8, 2025 will be our fourth wedding anniversary. We figured it was time to finally have a gathering in honor of our marriage, have an excuse to bring family and friends together, and we&rsquo;re excited to invite you to a reception.
                 </p>
-                <hr className="border-8 rounded-xl border-neutral-200 border-s-8 my-10" />
+                <hr className="border-2 rounded-xl border-neutral-200 border-s-8 my-10" />
                 <p>
                     We first met as students at Georgia State. We were in the same film class - &quot;Computational Media&quot; - and peered at each other for weeks through glowing rows of Mac monitors in a dark computer lab during lectures.
                 </p>

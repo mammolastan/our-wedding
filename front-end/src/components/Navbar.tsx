@@ -23,15 +23,7 @@ export const Navbar = () => {
               <div className="flex flex-wrap items-center justify-between w-full lg:w-auto ml-1">
                 <Link href="/">
                   <span className="flex items-center space-x-2 text-2xl font-medium text-slate-700 dark:text-gray-100">
-                    <span>
-                      {/* <Image
-                        src="/img/joey-jane.png"
-                        alt="N"
-                        width="32"
-                        height="32"
-                        className="w-8"
-                      /> */}
-                    </span>
+
                     <span>Matt and Val&rsquo;s reception</span>
                   </span>
                 </Link>
@@ -66,7 +58,7 @@ export const Navbar = () => {
                         {item}
                       </Link>
                     ))}
-
+                    <div className="absolute right-0 mr-10"><ThemeChanger /></div>
                   </>
                 </Disclosure.Panel>
               </div>

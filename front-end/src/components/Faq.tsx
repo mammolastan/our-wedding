@@ -50,7 +50,7 @@ const faqdata = [
   },
   {
     question: "What's the situation for kids?",
-    answer: "Our reception is absolutely kid-friendly. We will have a dedicated area for kids with a baby sitter during the event?"
+    answer: "Our reception is absolutely kid-friendly. We will have a dedicated area for kids with a baby sitter during the event."
   },
   {
     question: "What's the dress code?",
