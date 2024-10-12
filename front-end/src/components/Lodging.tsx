@@ -9,7 +9,7 @@ import hotel2 from '../../public/img/thedarwin.jpeg'
 export default function Lodging() {
     return (
         <Container
-            className='flex w-full flex-col mt-4 items-center justify-center text-left longstory'>
+            className='flex w-full flex-col mt-4 items-center justify-center text-left'>
             <div className="max-w-2xl text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300">
                 <h3 className='text-2xl  font-semibold leading-7 text-left p-8 pl-0'> Lodging </h3>
 

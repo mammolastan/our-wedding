@@ -60,3 +60,9 @@ img.heart {
 .imageSpecial {
   max-width: 50%;
 }
+
+@media (max-width: 640px) {
+  .imageSpecial {
+    display: none;
+  }
+}
