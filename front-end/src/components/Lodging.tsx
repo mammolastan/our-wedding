@@ -12,7 +12,9 @@ export default function Lodging() {
             className='flex w-full flex-col mt-4 items-center justify-center text-left'>
             <div className="max-w-2xl text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300">
                 <h3 className='text-2xl  font-semibold leading-7 text-left p-8 pl-0'> Lodging </h3>
-
+                <p className='mb-4'>
+                    For out-of-towners or those who want to make a weekend of it, we have a few recommendations for lodging in the area.
+                </p>
 
 
                 <strong>Bed &amp; Breakfast:</strong>
