@@ -9,6 +9,25 @@
   }
 }
 
+@keyframes change-color {
+  0%,
+  100% {
+    background: #ff00ff; /* Magenta */
+    filter: blur(6px) brightness(1.2);
+  }
+  25% {
+    background: #00ffff; /* Cyan */
+    filter: blur(8px) brightness(1.5);
+  }
+  50% {
+    background: #ffff00; /* Yellow */
+    filter: blur(10px) brightness(1.8);
+  }
+  75% {
+    background: #ff1493; /* Deep Pink */
+    filter: blur(8px) brightness(1.5);
+  }
+}
 a:hover {
   cursor: pointer;
 }
@@ -25,6 +44,44 @@ a:hover {
 .caption {
   text-align: center;
   font-style: italic;
+}
+
+.heart-container {
+  position: relative;
+  display: inline-block;
+}
+
+.heart-container::before {
+  content: "";
+  position: absolute;
+  top: -16px;
+  left: -24px;
+  right: -24px;
+  bottom: -24px;
+  mask: radial-gradient(at 70% 31%, #000 29%, #0000 30%),
+    radial-gradient(at 30% 31%, #000 29%, #0000 30%),
+    linear-gradient(#000 0 0) bottom/100% 50% no-repeat;
+  clip-path: polygon(-41% 0, 50% 91%, 141% 0);
+  background: #ff1493; /* Deep pink color */
+  filter: blur(144px);
+  z-index: -1;
+  animation: change-color 8s linear infinite;
+}
+
+.heart-container::after {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
+  background: rgba(255, 255, 255, 0.1);
+  filter: blur(1px);
+  mask: radial-gradient(at 70% 31%, #000 29%, #0000 30%),
+    radial-gradient(at 30% 31%, #000 29%, #0000 30%),
+    linear-gradient(#000 0 0) bottom/100% 50% no-repeat;
+  clip-path: polygon(-41% 0, 50% 91%, 141% 0);
+  z-index: 1;
 }
 
 img.heart {

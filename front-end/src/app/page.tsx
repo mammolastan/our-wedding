@@ -21,13 +21,10 @@ export default function Home() {
         title="RSVP"
         form={true}
       >
-
         <br>
         </br>Atlanta, Georgia
       </SectionTitle>
 
-      {/* <Benefits data={benefitOne} />
-      <Benefits imgPos="right" data={benefitTwo} /> */}
       <a id="OurStory"></a>
       <SectionTitle preTitle="Our story"
         title="A Brief Summary">

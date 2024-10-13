@@ -26,7 +26,7 @@ export const Hero = () => {
           </div>
         </div>
         <div className="flex items-center justify-center w-full lg:w-1/2 ">
-          <div className="mx-auto">
+          <div className="mx-auto heart-container">
             <Image
               src={heroImg}
               width="400"
