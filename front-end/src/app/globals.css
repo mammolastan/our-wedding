@@ -61,6 +61,39 @@ img.heart {
   max-width: 50%;
 }
 
+.image-link-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  margin-bottom: 20px;
+}
+
+.image-link {
+  position: relative;
+  display: inline-block;
+  margin: 5px;
+  transition: 0.5s all;
+}
+
+.image-link:hover {
+  filter: saturate(4);
+  scale: 1.01;
+}
+.image-link img {
+  width: 100%;
+  height: auto;
+}
+
+.image-link span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+}
+
 @media (max-width: 640px) {
   .imageSpecial {
     display: none;

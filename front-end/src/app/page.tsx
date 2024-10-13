@@ -3,7 +3,6 @@ import { Hero } from "@/components/Hero";
 import { SectionTitle } from "@/components/SectionTitle";
 import { Benefits } from "@/components/Benefits";
 import { Video } from "@/components/Video";
-// import { Testimonials } from "@/components/Testimonials";
 import { Faq } from "@/components/Faq";
 import { Cta } from "@/components/Cta";
 import Ourstory from "@/components/Ourstory";
@@ -42,7 +41,7 @@ export default function Home() {
       >
       </SectionTitle>
       <Lodging />
-      {/* <Video videoId="fZ0D0cnR88E" /> */}
+
       <a id='AbouttheVenue'></a>
 
       <SectionTitle
@@ -53,7 +52,7 @@ export default function Home() {
           src={trolleyBarn}
           width="200"
           height="600"
-          className="float-left p-2"
+          className="sm:float-none md:float-left p-2"
           alt="The Trolley Barn"
           loading="eager"
           placeholder="blur"
