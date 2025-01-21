@@ -1,17 +1,19 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
-import { useEffectOnce } from "react-use";
 
 const ThemeChanger = () => {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
 
   // When mounted on client, now we can show the UI
-  useEffect(() => setMounted(true), []);
-  useEffectOnce(() => {
-    setTheme("dark");
-  });
+  useEffect(() => {
+    setMounted(true);
+    // Check for system preference
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    setTheme(prefersDark ? 'dark' : 'light');
+  }, []);
+
 
 
   if (!mounted) return null;

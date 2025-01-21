@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Container } from "@/components/Container";
 import heroImg from "../../public/img/matt-val-pose1.jpg";
+import Link from "next/link";
 
 
 export const Hero = () => {
@@ -19,7 +20,14 @@ export const Hero = () => {
               963 Edgewood Avenue, NE Atlanta, GA 30307
             </h2>
             <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
-              Please RSVP by December 1, 2024.
+              Arrival time: 3:00 PM
+            </p>
+            <h2 className='text-3xl font-semibold leading-7 p-8 pl-0 text-center'> Driving</h2>
+            <p>
+              There is plenty of parking available at the reception venue.
+            </p>
+            <p>
+              <b>Lyft code:</b> If you are opting not to drive, we would like to share a <Link href="./Matt-and-Val-lyft.pdf" className="text-underline text-blue-500 hover:text-blue-700">Lyft code</Link> with you that will cover up to $20 dollars of your ride(s)that day. Code: WILLOWLOVESYOU
             </p>
 
 
